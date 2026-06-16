@@ -33,16 +33,24 @@ namespace Tic_Tac_Toe
         int counter = 0;
         int draw = 0;
         PictureBox [,] array=new PictureBox[3,3];
+       
         public Form1()
         {
             InitializeComponent();
             this.FormBorderStyle = FormBorderStyle.FixedDialog;
-
             player1.name = "Player X";
             player1.win = 0;
             player2.name = "Player O";
             player2.win = 0;
+            array = new PictureBox[,]
+            {
+                {picture1,picture2,picture3 },
+                {picture4,picture5,picture6 },
+                {picture7,picture8,picture9 }
 
+
+            };
+        
 
         }
         bool IsImageTagEqual(PictureBox firstPictureBox, PictureBox secondPictureBox)
@@ -286,18 +294,13 @@ namespace Tic_Tac_Toe
 
         }
 
-        //  Player1.image;//image Rosorcces here;
-        //Player1.image.Tag;//tag here
-        //player2.name="Player2";
-        //Player2.image;//image Rosorcces here;
-        //bool isPlayer1 = true;
+     
       
         private void Form1_Load(object sender, EventArgs e)
         {
 
         }
-
-        private void picture1_Click(object sender, EventArgs e)
+        void Pictures_Click(object sender,EventArgs e)
         {
             if (AreImageChecked(sender))
             {
@@ -305,121 +308,14 @@ namespace Tic_Tac_Toe
                 return;
             }
             ConvertPlayers(sender);
-            array[0, 0] = picture1;
+
             counter++;
             CheckGameRules(array);
-        }
 
-        private void picture2_Click(object sender, EventArgs e)
-        {
-            if (AreImageChecked(sender))
-            {
 
-                return;
-            }
-            ConvertPlayers(sender);
-            array[0, 1] = picture2;
-            counter++;
-            CheckGameRules(array);
-        
-        }
-
-        private void picture3_Click(object sender, EventArgs e)
-        {
-            if (AreImageChecked(sender))
-            {
-
-                return;
-            }
-            ConvertPlayers(sender);
-            array[0, 2] = picture3;
-            counter++;
-            CheckGameRules(array);
-        
-    }
-
-        private void picture4_Click(object sender, EventArgs e)
-        {
-            if (AreImageChecked(sender))
-            {
-
-                return;
-            }
-            ConvertPlayers(sender);
-            array[1, 0] = picture4;
-            counter++;
-            CheckGameRules(array);
-        
 
         }
-
-        private void picture5_Click(object sender, EventArgs e)
-        {
-            if (AreImageChecked(sender))
-            {
-
-                return;
-            }
-            ConvertPlayers(sender);
-            array[1, 1] = picture5;
-            counter++;
-            CheckGameRules(array);
-        }
-
-        private void picture6_Click(object sender, EventArgs e)
-        {
-            if (AreImageChecked(sender))
-            {
-
-                return;
-            }
-            ConvertPlayers(sender);
-            array[1, 2] = picture6;
-            counter++;
-            CheckGameRules(array);
-        }
-
-        private void picture7_Click(object sender, EventArgs e)
-        {
-            if (AreImageChecked(sender))
-            {
-
-                return;
-            }
-            ConvertPlayers(sender);
-            array[2, 0] = picture7;
-            counter++;
-            CheckGameRules(array);
-        }
-
-        private void picture8_Click(object sender, EventArgs e)
-        {
-            if (AreImageChecked(sender))
-            {
-
-                return;
-            }
-            ConvertPlayers(sender);
-            array[2, 1] = picture8;
-            counter++;
-            CheckGameRules(array);
-        }
-
-        private void picture9_Click(object sender, EventArgs e)
-        {
-            if (AreImageChecked(sender))
-            {
-
-                return;
-            }
-            ConvertPlayers(sender);
-            array[2, 2] = picture9;
-            counter++;
-            CheckGameRules(array);
-        }
-
-     
-
+ 
         private void btnRestartScore_Click(object sender, EventArgs e)
         {
             Reset();

@@ -125,7 +125,7 @@
             this.picture1.TabIndex = 4;
             this.picture1.TabStop = false;
             this.picture1.Tag = "?";
-            this.picture1.Click += new System.EventHandler(this.picture1_Click);
+            this.picture1.Click += new System.EventHandler(this.Pictures_Click);
             // 
             // picture7
             // 
@@ -139,7 +139,7 @@
             this.picture7.TabIndex = 5;
             this.picture7.TabStop = false;
             this.picture7.Tag = "?";
-            this.picture7.Click += new System.EventHandler(this.picture7_Click);
+            this.picture7.Click += new System.EventHandler(this.Pictures_Click);
             // 
             // picture4
             // 
@@ -153,7 +153,7 @@
             this.picture4.TabIndex = 6;
             this.picture4.TabStop = false;
             this.picture4.Tag = "?";
-            this.picture4.Click += new System.EventHandler(this.picture4_Click);
+            this.picture4.Click += new System.EventHandler(this.Pictures_Click);
             // 
             // picture5
             // 
@@ -167,7 +167,7 @@
             this.picture5.TabIndex = 9;
             this.picture5.TabStop = false;
             this.picture5.Tag = "?";
-            this.picture5.Click += new System.EventHandler(this.picture5_Click);
+            this.picture5.Click += new System.EventHandler(this.Pictures_Click);
             // 
             // picture8
             // 
@@ -181,7 +181,7 @@
             this.picture8.TabIndex = 8;
             this.picture8.TabStop = false;
             this.picture8.Tag = "?";
-            this.picture8.Click += new System.EventHandler(this.picture8_Click);
+            this.picture8.Click += new System.EventHandler(this.Pictures_Click);
             // 
             // picture2
             // 
@@ -195,7 +195,7 @@
             this.picture2.TabIndex = 7;
             this.picture2.TabStop = false;
             this.picture2.Tag = "?";
-            this.picture2.Click += new System.EventHandler(this.picture2_Click);
+            this.picture2.Click += new System.EventHandler(this.Pictures_Click);
             // 
             // picture6
             // 
@@ -209,7 +209,7 @@
             this.picture6.TabIndex = 12;
             this.picture6.TabStop = false;
             this.picture6.Tag = "?";
-            this.picture6.Click += new System.EventHandler(this.picture6_Click);
+            this.picture6.Click += new System.EventHandler(this.Pictures_Click);
             // 
             // picture9
             // 
@@ -223,7 +223,7 @@
             this.picture9.TabIndex = 11;
             this.picture9.TabStop = false;
             this.picture9.Tag = "?";
-            this.picture9.Click += new System.EventHandler(this.picture9_Click);
+            this.picture9.Click += new System.EventHandler(this.Pictures_Click);
             // 
             // picture3
             // 
@@ -237,7 +237,7 @@
             this.picture3.TabIndex = 10;
             this.picture3.TabStop = false;
             this.picture3.Tag = "?";
-            this.picture3.Click += new System.EventHandler(this.picture3_Click);
+            this.picture3.Click += new System.EventHandler(this.Pictures_Click);
             // 
             // label3
             // 
